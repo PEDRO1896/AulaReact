@@ -37,7 +37,7 @@ export default function App(){
 
 <div className="card">
   <h3>Exercicio 3</h3>
-  <Exercicio3 nota1={7} nota2={6} />
+  <Exercicio3 nota1={9} nota2={7} />
 
 </div>
 
