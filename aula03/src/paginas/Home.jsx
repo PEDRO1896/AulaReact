@@ -17,6 +17,24 @@ export default function Home()
 <li>< Link to="/estados/es">Espirito Santo</Link></li>
           </ul>     
             </div>
+            <div className="conteudo">
+                <h3>Região Sul</h3>
+                <ul>
+                    <li>< Link to="/estados/pr">Paraná</Link></li>
+                    <li>< Link to="/estados/sc">Santa Catarina</Link></li>
+                    <li>< Link to="/estados/rs">Rio Grande do Sul</Link></li>
+                </ul>
+             </div>
+
+                <div className="conteudo">
+                <h3>Região Centro-oeste</h3>
+             <ul>
+             <li>< Link to="/estados/go">Goiás</Link></li>
+             <li>< Link to="/estados/mt">Mato Grosso</Link></li>
+             <li>< Link to="/estados/ms">Mato Grosso do Sul</Link></li>
+             <li>< Link to="/estados/df">Distrito Federal</Link></li>
+             </ul>
+            </div>
         </div>
     );
 }

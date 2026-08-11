@@ -5,7 +5,13 @@ import SaoPaulo from "./paginas/SaoPaulo";
 import MinasGerais from "./paginas/MinasGerais";
 import RioJaneiro from "./paginas/RioJaneiro";
 import EspiritoSanto from "./paginas/EspiritoSanto";
-
+import Parana from "./paginas/Parana";
+import SantaCatarina from "./paginas/SantaCatarina";
+import RioGrandedoSul from "./paginas/RioGrandedoSul";
+import Goias from "./paginas/Goias";
+import MatoGrosso from "./paginas/MatoGrosso";
+import MatoGrossodoSul from "./paginas/MatoGrossodoSul";
+import DistritoFederal from "./paginas/DistritoFederal";
 export default function App(){
  return (
     <BrowserRouter>
@@ -17,6 +23,14 @@ export default function App(){
 <Route path="/estados/mg" element={<MinasGerais />} />
 <Route path="/estados/rj" element={<RioJaneiro />} />
 <Route path="/estados/es" element={<EspiritoSanto />} />
+<Route path="/estados/pr" element={<Parana />} />
+<Route path="/estados/sc" element={<SantaCatarina />} />
+<Route path="/estados/rs" element={<RioGrandedoSul />} />
+<Route path="/estados/go" element={<Goias />} />
+<Route path="/estados/mt" element={<MatoGrosso />} />
+<Route path="/estados/ms" element={<MatoGrossodoSul />} />
+<Route path="/estados/df" element={<DistritoFederal />} />
+
 
     </Routes>
     </BrowserRouter>
