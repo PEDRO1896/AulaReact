@@ -1,48 +1,48 @@
-import {Link} from "react-router-dom";
-import {useState} from "react";
-export default function Exercicio2()
-{
-const[celsius, setCelsius] = useState();
-const[fahrenheit, setFarenheit] = useState();
+import { Link } from "react-router-dom";
+ import { useState } from "react";
 
-function calcular()
-{
+export default function Exercicio2() {
+ const [fahrenheit, setFahrenheit] = useState();
+ const [resultado, setResultado] = useState();
 
-}
-    return (
-        <div>
+ function calcular() {
+ let fah = Number(fahrenheit);
+ let celsius = ((fah - 32) * 5) / 9;
 
-            <h1>Exercício 2</h1>
+ // Exibindo o resultado na variável resultado
+ setResultado(
+ <div>
+ Temperatura Celsius: {celsius.toFixed(2)} °C
+ </div>
+ );
+ }
 
-            <div className="conteudo">
-        <form>
-            <p>
-                Digite a temperatura em farenheit <br />
-                <input type="text" 
-                value={numero}
-                onChange={(e) => setFarenheit(e.target.value)}
-                />
-            </p>
+ return (
+ <div>
+ <h1>Exercício 2</h1>
 
-        <p> 
-            <input type="button" value="Calcular" />
-        </p>
+ <div className="conteudo">
+ <form>
+ <p>
+ Digite a temperatura em Fahrenheit <br />
+ <input 
+ type="text" 
+ value={fahrenheit}
+ onChange={(e) => setFahrenheit(e.target.value)}
+ />
+ </p>
+ <p>
+ <input type="button" value="Calcular" onClick={calcular} />
+ </p>
+ <p>
+ {resultado}
+ </p>
+ </form>
 
-        <p>
-            {resultado}
-        </p>
-
-
-
-        </form>
-
-
-                <p>
-                    <Link to="/">Voltar</Link>
-                </p>
-
-            </div>
-
-        </div>
-    );
-}
+ <p>
+ <Link to="/">Voltar</Link>
+ </p>
+ </div>
+ </div>
+ );
+ }
